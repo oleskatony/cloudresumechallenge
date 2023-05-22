@@ -1,7 +1,7 @@
-**Overview**
+# Overview
 This project aims to create a static website architecture with frontend and backend components, utilizing various AWS services such as S3, CloudFront, Route 53, API Gateway, Lambda, and DynamoDB. The primary objectives are to host a static website on an S3 bucket, handle DNS, CDN, and SSL certificates using CloudFront and Route 53, and implement a visitor counter for the website using serverless solutions provided by AWS API Gateway, Lambda, and DynamoDB.
 
-**Components**
+## Components
 
 - Frontend: The website's frontend is hosted on an S3 bucket and includes HTML, CSS, and JavaScript files. The JavaScript code is responsible for making API calls to update the visitor count.
 
@@ -15,7 +15,7 @@ This project aims to create a static website architecture with frontend and back
 
 - Continuous Integration and Continuous Deployment (CI/CD): For managing changes to the codebase and automating deployments, this project integrates GitHub and the AWS Command Line Interface (CLI). GitHub serves as the version control system, facilitating collaboration and code management. The AWS CLI is used to deploy the changes made in the codebase to the AWS infrastructure, ensuring a streamlined CI/CD process.
 
-**Process Flow**
+## Process Flow
 
 1. When a visitor accesses the website, the JavaScript code embedded in the frontend triggers a request to the API Gateway.
 2. The API Gateway receives the request and forwards it to the associated Lambda function.
@@ -26,6 +26,6 @@ This project aims to create a static website architecture with frontend and back
 
 This process ensures that every time a visitor accesses the website, the visitor count is incremented and stored in DynamoDB, providing an accurate representation of the website's popularity.
 
-**Conclusion**
+# Conclusion
 
 By successfully implementing this project, a static website architecture is created and hosted on an S3 bucket. The website benefits from DNS, CDN, and SSL certificate management provided by AWS CloudFront and Route 53. Additionally, the visitor counter functionality is seamlessly integrated using serverless solutions like AWS API Gateway, Lambda, and DynamoDB. Through Terraform, the deployment of serverless components is streamlined, while GitHub and AWS CLI enable efficient code management and automated deployment.
