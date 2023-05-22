@@ -1,4 +1,6 @@
 # Overview
+I took on the exciting Cloud Resume Challenge as a way to showcase my skills and explore various aspects of cloud computing. [The Cloud Resume Challenge](https://cloudresumechallenge.dev/) is a popular project developed by [Forrest Brazeal](https://bio.link/forrestbrazeal), aimed at highlighting the abilities required for a career in the cloud industry. For my attempt, I focused on utilizing Amazon Web Services (AWS) as my preferred cloud provider. I'd like to give a shoutout to the [AWS Discord](https://discord.com/servers/amazon-web-services-aws-cloud-423842546947457024) community for recommending this project and for providing a fantastic platform for cloud enthusiasts, whether beginners or experienced professionals, to connect and learn from one another.
+
 This project aims to create a static website architecture with frontend and backend components, utilizing various AWS services such as S3, CloudFront, Route 53, API Gateway, Lambda, and DynamoDB. The primary objectives are to host a static website on an S3 bucket, handle DNS, CDN, and SSL certificates using CloudFront and Route 53, and implement a visitor counter for the website using serverless solutions provided by AWS API Gateway, Lambda, and DynamoDB.
 
 ## Components
