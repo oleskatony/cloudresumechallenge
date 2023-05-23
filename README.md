@@ -17,7 +17,7 @@ This project aims to create a static website architecture with frontend and back
 
 - Infrastructure as Code (IaC): To streamline the creation of serverless components, this project utilizes Terraform, an Infrastructure as Code (IaC) tool. Terraform allows for the declarative definition and provisioning of infrastructure resources, enabling efficient and consistent deployment of the API gateway, Lambda function, and DynamoDB.
 
-- Continuous Integration and Continuous Deployment (CI/CD): For managing changes to the codebase and automating deployments, this project integrates GitHub and the AWS Command Line Interface (CLI). GitHub serves as the version control system, facilitating collaboration and code management. The AWS CLI is used to deploy the changes made in the codebase to the AWS infrastructure, ensuring a streamlined CI/CD process.
+- Continuous Integration and Continuous Deployment (CI/CD): For managing changes to the codebase and automating deployments, this project integrates GitHub Actions and the AWS Command Line Interface (CLI). GitHub serves as the version control system, facilitating collaboration and code management. The AWS CLI is used to deploy the changes made in the codebase to the AWS infrastructure, ensuring a streamlined CI/CD process.
 
 ## Process Flow
 
