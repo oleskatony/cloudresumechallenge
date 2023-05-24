@@ -21,7 +21,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Sync files to S3 bucket
-        run: aws s3 sync . s3://your-bucket-name --exclude ".git/*" --exclude ".github/*" --exclude README.md --exact-timestamps
+        run: aws s3 sync . s3://awsresumebucket --exclude ".git/*" --exclude ".github/*" --exclude README.md --exact-timestamps
 
       - name: Clear CloudFront cache
         if: steps.deploy.outputs.changed == 'true'
