@@ -5,6 +5,8 @@ I took on the exciting Cloud Resume Challenge as a way to showcase my skills and
 
 This project aims to create a static website architecture with frontend and backend components, utilizing various AWS services such as S3, CloudFront, Route 53, API Gateway, Lambda, and DynamoDB. The primary objectives are to host a static website on an S3 bucket, handle DNS, CDN, and SSL certificates using CloudFront and Route 53, and implement a visitor counter for the website using serverless solutions provided by AWS API Gateway, Lambda, and DynamoDB.
 
+This repository contains all the files related to the frontend of the challenge. If you're interested in exploring the Terraform configuration, Lambda fuction, and GitHub actions then check out the [backend repository.](https://github.com/oleskatony/crc-backend)
+
 ## Components
 
 - Frontend: The website's frontend is hosted on an S3 bucket and includes HTML, CSS, and JavaScript files. The JavaScript code is responsible for making API calls to update the visitor count.
@@ -17,7 +19,7 @@ This project aims to create a static website architecture with frontend and back
 
 - Infrastructure as Code (IaC): To streamline the creation of serverless components, this project utilizes Terraform, an Infrastructure as Code (IaC) tool. Terraform allows for the declarative definition and provisioning of infrastructure resources, enabling efficient and consistent deployment of the API gateway, Lambda function, and DynamoDB.
 
-- Continuous Integration and Continuous Deployment (CI/CD): For managing changes to the codebase and automating deployments, this project integrates GitHub Actions and the AWS Command Line Interface (CLI). GitHub serves as the version control system, facilitating collaboration and code management. The AWS CLI is used to deploy the changes made in the codebase to the AWS infrastructure, ensuring a streamlined CI/CD process.
+- Continuous Integration and Continuous Deployment (CI/CD): For managing changes to the codebase and automating deployments, this project integrates GitHub Actions and the AWS Command Line Interface (CLI). GitHub serves as the version control system, facilitating collaboration and code management. GitHub actions enact AWS CLI commands, Terraform commands, and Python (pytest) to test and deploy the changes made in the codebase to the AWS infrastructure, ensuring a streamlined CI/CD process.
 
 ## Process Flow
 
