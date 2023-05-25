@@ -7,6 +7,8 @@ This project aims to create a static website architecture with frontend and back
 
 This repository contains all the files related to the frontend of the challenge. If you're interested in exploring the Terraform configuration, Lambda fuction, and GitHub actions then check out the [backend repository.](https://github.com/oleskatony/crc-backend)
 
+![resourcemapexample](https://github.com/oleskatony/cloudresumechallenge/blob/main/crcarchitecture.png)
+
 ## Components
 
 - Frontend: The website's frontend is hosted on an S3 bucket and includes HTML, CSS, and JavaScript files. The JavaScript code is responsible for making API calls to update the visitor count.
