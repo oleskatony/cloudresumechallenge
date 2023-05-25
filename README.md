@@ -3,17 +3,17 @@ I took on the exciting Cloud Resume Challenge as a way to showcase my skills and
 
 ![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=antoleska.net&style=plastic&up_color=green&up_message=online&url=https%3A%2F%2Fantoleska.net)
 
-This project aims to create a static website architecture with frontend and backend components, utilizing various AWS services such as S3, CloudFront, Route 53, API Gateway, Lambda, and DynamoDB. The primary objectives are to host a static website on an S3 bucket, handle DNS, CDN, and SSL certificates using CloudFront and Route 53, and implement a visitor counter for the website using serverless solutions provided by AWS API Gateway, Lambda, and DynamoDB.
+This project aims to create a static website architecture with front-end and back-end components, utilizing various AWS services such as S3, CloudFront, Route 53, API Gateway, Lambda, and DynamoDB. The primary objectives are to host a static website on an S3 bucket, handle DNS, CDN, and SSL certificates using CloudFront and Route 53, and implement a visitor counter for the website using serverless solutions provided by AWS API Gateway, Lambda, and DynamoDB.
 
-This repository contains all the files related to the frontend of the challenge. If you're interested in exploring the Terraform configuration, Lambda fuction, and GitHub actions then check out the [backend repository.](https://github.com/oleskatony/crc-backend)
+This repository contains all the files related to the front-end of the challenge. If you're interested in exploring the Terraform configuration, Lambda fuction, and GitHub actions then check out the [back-end repository.](https://github.com/oleskatony/crc-back-end)
 
 ![resourcemapexample](https://github.com/oleskatony/cloudresumechallenge/blob/main/crcarchitecture.png)
 
 ## Components
 
-- Frontend: The website's frontend is hosted on an S3 bucket and includes HTML, CSS, and JavaScript files. The JavaScript code is responsible for making API calls to update the visitor count.
+- Frontend: The website's front-end is hosted on an S3 bucket and includes HTML, CSS, and JavaScript files. The JavaScript code is responsible for making API calls to update the visitor count.
 
-- API Gateway: An API Gateway is set up to receive requests from the frontend and forward them to the Lambda function. It acts as a bridge between the frontend and backend components, handling the incoming requests and routing them to the appropriate backend service.
+- API Gateway: An API Gateway is set up to receive requests from the front-end and forward them to the Lambda function. It acts as a bridge between the front-end and back-end components, handling the incoming requests and routing them to the appropriate back-end service.
 
 - Lambda Function: The Lambda function plays a crucial role in this project. It is responsible for updating the visitor count stored in DynamoDB and returning a response to the API Gateway. The Lambda function is written in Python and executed in a serverless environment. It retrieves the current visitor count from DynamoDB, increments it, updates the count in DynamoDB, and sends a response back to the API Gateway.
 
@@ -25,12 +25,12 @@ This repository contains all the files related to the frontend of the challenge.
 
 ## Process Flow
 
-1. When a visitor accesses the website, the JavaScript code embedded in the frontend triggers a request to the API Gateway.
+1. When a visitor accesses the website, the JavaScript code embedded in the front-end triggers a request to the API Gateway.
 2. The API Gateway receives the request and forwards it to the associated Lambda function.
 3. The Lambda function is then invoked and retrieves the current visitor count from DynamoDB.
 4. The Lambda function increments the visitor count, updates the count in DynamoDB, and generates a response.
 5. The API Gateway receives the response from the Lambda function.
-6. Finally, the API Gateway sends the response back to the frontend, completing the request-response cycle.
+6. Finally, the API Gateway sends the response back to the front-end, completing the request-response cycle.
 
 This process ensures that every time a visitor accesses the website, the visitor count is incremented and stored in DynamoDB, providing an accurate representation of the website's popularity.
 
