@@ -21,7 +21,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Sync files to S3 bucket
-        run: aws s3 sync . s3://awsresumebucket --exclude ".git/*" --exclude ".github/*" --exclude README.md
+        run: aws s3 sync . s3://awsresumebucket --exclude ".git/*" --exclude ".github/*" --exclude README.md --exclude crcarchitecture.png
 
       - name: Clear CloudFront cache
         run: aws cloudfront create-invalidation --distribution-id EA4BC67IOZ71G --paths "/*"
